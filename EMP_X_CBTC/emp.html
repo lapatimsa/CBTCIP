@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmporifyX</title>
+    <link rel="stylesheet" href="emp.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                    <!-- Logo Image -->
+                    <img src="EmporifyX.png" alt="AsmECart Logo" class="logo-img">
+                <h1>EmporifyX</h1>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for products...">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="header-links">
+                <a href="#">Sign In</a>
+                <a href="#">Return & Orders</a>
+                <a href="#">Cart</a>
+                <!--<a href="http://127.0.0.1:5503/cart.html" id="cart-link">Cart (<span id="cart-count">0</span>)</a>-->
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Bar Section -->
+    <nav class="menu-bar">
+        <ul>
+            <li><a href="javascript:void(0);" onclick="showSection('electronics')">Electronics</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('home-appliances')">Home Appliances</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('fashion')">Fashion</a></li>
+           <!-- <li><a href="javascript:void(0);" onclick="showSection('sports')">Sports</a></li>-->
+            <li><a href="javascript:void(0);" onclick="showSection('books')">Books</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('makeup')">Makeup</a></li> <!-- Added Makeup Section -->
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2 class="section-title">Featured Products</h2>
+        <!-- Search Box -->
+<!--input type="text" id="search-input" placeholder="Search for products..." />
+
+ Product List 
+<div class="product-list">
+    <div class="product-item" data-name="Product 1" data-price="19.99">
+        <img src="product1.jpg" alt="Product 1">
+        <h3>Product 1</h3>
+        <p class="price">$19.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-item" data-name="Product 2" data-price="29.99">
+        <img src="product2.jpg" alt="Product 2">
+        <h3>Product 2</h3>
+        <p class="price">$29.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+     More product items here -->
+</div>
+
+
+        <!-- Electronics Section -->
+        <section id="electronics" class="content-section">
+            <h3 class="category-title">Electronics</h3>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="phone.jpg" alt="iphone15">
+                    <h3>iphone15</h3>
+                    <p class="price">₹70,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="laptop.jpg" alt="Macbook air m3">
+                    <h3>Macbook air m3</h3>
+                    <p class="price">₹1,50,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="headphone.jpg" alt="Samsung Earbuds">
+                    <h3>Samsung Earbuds</h3>
+                    <p class="price">₹3,999</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="watch.jpg" alt="Smartwatch">
+                    <h3>Smartwatch</h3>
+                    <p class="price">₹7,986</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Home Appliances Section -->
+        <section id="home-appliances" class="content-section">
+            <h3 class="category-title">Home Appliances</h3>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="fridge.jpg" alt="Refrigerator">
+                    <h3>Refrigerator</h3>
+                    <p class="price">₹67,678</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="washing.jpg" alt="Washing Machine">
+                    <h3>Washing Machine</h3>
+                    <p class="price">₹34,845</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="micro.jpg" alt="Microwave Oven">
+                    <h3>Microwave Oven</h3>
+                    <p class="price">₹12,678</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="ac.jpg" alt="Air Conditioner">
+                    <h3>Air Conditioner</h3>
+                    <p class="price">₹90,000</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fashion Section -->
+        <section id="fashion" class="content-section">
+            <h3 class="category-title">Fashion</h3>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="t-Shirt.jpg" alt="T-Shirt">
+                    <h3>T-Shirt</h3>
+                    <p class="price">₹299</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="sweater.jpg" alt="Sweater">
+                    <h3>Sweater</h3>
+                    <p class="price">₹2,999</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="sneakers.jpg" alt="Sneakers">
+                    <h3>Sneakers</h3>
+                    <p class="price">₹4,500</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="sunglass.jpg" alt="Sunglass">
+                    <h3>Sunglass</h3>
+                    <p class="price">₹6,999</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sports Section 
+        <section id="sports" class="content-section">
+            <h3 class="category-title">Sports</h3>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/300" alt="Soccer Ball">
+                    <h3>Soccer Ball</h3>
+                    <p class="price">₹</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/300" alt="Tennis Racket">
+                    <h3>Tennis Racket</h3>
+                    <p class="price">₹</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/300" alt="Basketball">
+                    <h3>Basketball</h3>
+                    <p class="price">₹</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://via.placeholder.com/300" alt="Fitness Tracker">
+                    <h3>Fitness Tracker</h3>
+                    <p class="price">₹</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>-->
+
+        <!-- Books Section -->
+        <section id="books" class="content-section">
+            <h3 class="category-title">Books</h3>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="palace.jpg" alt="The Palace of Illusions">
+                    <h3>The Palace of Illusions</h3>
+                    <p class="price">₹611</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="twisted.jpg" alt="Combo of Twisted Series">
+                    <h3>Combo of Twisted Series</h3>
+                    <p class="price">₹878</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="hidden.jpg" alt="The Hidden Hindu(Trilogy)">
+                    <h3>The Hidden Hindu(Trilogy)</h3>
+                    <p class="price">₹999</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="ikigai.jpg" alt="IKIGAI">
+                    <h3>IKIGAI</h3>
+                    <p class="price">₹350</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Makeup Section -->
+        <section id="makeup" class="content-section">
+            <h3 class="category-title">Makeup</h3>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="lipstick.jpg" alt="Lipstick">
+                    <h3>Lipstick</h3>
+                    <p class="price">₹899</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="foundation.jpg" alt="Foundation">
+                    <h3>Foundation</h3>
+                    <p class="price">₹670</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="mascara.jpg" alt="Mascara">
+                    <h3>Mascara</h3>
+                    <p class="price">₹450</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="kajal.jpg" alt="Kajal">
+                    <h3>Kajal</h3>
+                    <p class="price">₹189</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <button id="close-cart">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 EmporifyX. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Help</a>
+        </div>
+    </footer>
+
+    <script src="emp.js"></script>
+</body>
+</html>
